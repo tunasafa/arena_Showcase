@@ -179,26 +179,32 @@ This phase forced better product thinking. Desktop and web habits do not automat
 
 <table>
   <tr>
-    <td width="33%">
+    <td width="58%" rowspan="2">
       <img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Last mobile version on a real phone" width="100%">
     </td>
-    <td width="33%">
+    <td width="21%">
       <img src="docs/readme-assets/09-last-version-mobile-2.png" alt="Last mobile version 2" width="100%">
     </td>
-    <td width="33%">
+    <td width="21%">
       <img src="docs/readme-assets/11-last-version-mobile-1.png" alt="Last mobile version 1" width="100%">
     </td>
   </tr>
+  <tr>
+    <td colspan="2">
+      This is the point where the project can now be shown publicly with confidence.
+      <br><br>
+      It is still ongoing development, but it has reached a meaningful MVP/prototype phase:
+      <br><br>
+      - the mobile version is playable
+      <br>
+      - the visual language is much more mature than in the first builds
+      <br>
+      - the structure is good enough to continue iterating seriously
+      <br>
+      - the project is now clear enough to invite feedback and possible collaboration
+    </td>
+  </tr>
 </table>
-
-This is the point where the project can now be shown publicly with confidence.
-
-It is still ongoing development, but it has reached a meaningful MVP/prototype phase:
-
-- the mobile version is playable
-- the visual language is much more mature than in the first builds
-- the structure is good enough to continue iterating seriously
-- the project is now clear enough to invite feedback and possible collaboration
 
 ---
 
