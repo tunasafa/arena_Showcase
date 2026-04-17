@@ -2,7 +2,7 @@
 
 # `ARENA`
 
-**From a napkin sketch to a real-time 3D mobile game — the full development story**
+**From a notebook sketch to a real-time 3D mobile game — the full development story**
 
 <br>
 
