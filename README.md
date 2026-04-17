@@ -44,31 +44,11 @@ It is not presented as a finished product. It is presented because it has now re
 
 ## Main Repository
 
-The actual game development repository is here:
+The actual game development repository is here but it is private for now:
 
 **[github.com/tunasafa/arena](https://github.com/tunasafa/arena)**
 
 This showcase repository exists to tell the development story in a clearer and more visual way.
-
-## Add The Images Here
-
-Place your screenshots in `docs/readme-assets/` with these filenames:
-
-| Your title | Suggested file name |
-| --- | --- |
-| first 3d web version | `01-first-3d-web-version.png` |
-| first concept trial | `02-first-concept-trial.png` |
-| sketch | `03-sketch.png` |
-| ui improved mvp on web | `04-ui-improved-mvp-on-web.png` |
-| example new ui | `05-example-new-ui.png` |
-| first mobile menu | `06-first-mobile-menu.png` |
-| first mobile menu2 | `07-first-mobile-menu-2.png` |
-| the last mobile version on a real phone.png | `08-last-mobile-version-real-phone.png` |
-| last version mobile2.PNG | `09-last-version-mobile-2.png` |
-| mobile version graphics improvement search | `10-mobile-version-graphics-improvement-search.png` |
-| last version mobile1.PNG | `11-last-version-mobile-1.png` |
-
----
 
 ## Development Story
 
