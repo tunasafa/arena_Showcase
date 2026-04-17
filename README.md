@@ -2,7 +2,7 @@
 
 # `ARENA`
 
-**From a notebook sketch to a real-time 3D mobile game — the full development story**
+**From a napkin sketch to a real-time 3D mobile game — the full development story**
 
 <br>
 
@@ -18,6 +18,14 @@ An arena-based multiplayer fighting game where players push each other into hole
 
 *This is the showcase repository — a visual timeline of how the game was made.*
 *The development repo is private for now.*
+
+<br>
+
+<img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Arena running on a real phone — current state" width="70%">
+
+<br>
+
+*The current state of the game, running on a real device.*
 
 </div>
 
