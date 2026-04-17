@@ -42,6 +42,14 @@ It is not presented as a finished product. It is presented because it has now re
 - technically structured enough to continue building on
 - ready for feedback, testing, contribution ideas, and iteration
 
+## Current State First
+
+<img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Current mobile version shown on a real phone" width="100%">
+
+This is the current state of the project today.
+
+The game is still ongoing, but it has now reached a mobile MVP/prototype phase that is strong enough to present publicly. Showing the latest real-device version first makes the rest of the page easier to read as a development journey toward this point.
+
 ## Main Repository
 
 The actual game development repository is here but it is private for now:
@@ -54,55 +62,33 @@ This showcase repository exists to tell the development story in a clearer and m
 
 ### 1. The sketch stage
 
-<table>
-  <tr>
-    <td width="56%">
-      <img src="docs/readme-assets/03-sketch.png" alt="Sketch" width="100%">
-    </td>
-    <td width="44%">
-      Everything started from a simple sketch.
-      <br><br>
-      At this point, the goal was not polish. The goal was to understand the core game idea:
-      an arena-based experience with readable movement, competitive energy, and enough structure to become a real playable loop later.
-      <br><br>
-      Starting with sketching helped keep the scope small and testable.
-    </td>
-  </tr>
-</table>
+<img src="docs/readme-assets/03-sketch.png" alt="Sketch" width="100%">
+
+Everything started from a simple sketch.
+
+At this point, the goal was not polish. The goal was to understand the core game idea: an arena-based experience with readable movement, competitive energy, and enough structure to become a real playable loop later.
+
+Starting with sketching helped keep the scope small and testable.
 
 ### 2. First concept trial
 
-<table>
-  <tr>
-    <td width="56%">
-      <img src="docs/readme-assets/02-first-concept-trial.png" alt="First concept trial" width="100%">
-    </td>
-    <td width="44%">
-      This was the first serious attempt to prove the idea.
-      <br><br>
-      It was still rough, but that was useful. The purpose here was to check whether the game concept actually had potential in motion, not just in imagination.
-      <br><br>
-      One of the first lessons came here: some ideas feel exciting in theory, but only real testing shows what is worth continuing.
-    </td>
-  </tr>
-</table>
+<img src="docs/readme-assets/02-first-concept-trial.png" alt="First concept trial" width="100%">
+
+This was the first serious attempt to prove the idea.
+
+It was still rough, but that was useful. The purpose here was to check whether the game concept actually had potential in motion, not just in imagination.
+
+One of the first lessons came here: some ideas feel exciting in theory, but only real testing shows what is worth continuing.
 
 ### 3. First 3D web version
 
-<table>
-  <tr>
-    <td width="56%">
-      <img src="docs/readme-assets/01-first-3d-web-version.png" alt="First 3D web version" width="100%">
-    </td>
-    <td width="44%">
-      This was the first version where the project started feeling like a real game.
-      <br><br>
-      The browser version made it possible to build and test gameplay quickly. That mattered a lot, because early game development benefits from fast iteration more than heavy production setup.
-      <br><br>
-      The main focus was simple: playable interaction, movement, collisions, and immediate feedback.
-    </td>
-  </tr>
-</table>
+<img src="docs/readme-assets/01-first-3d-web-version.png" alt="First 3D web version" width="100%">
+
+This was the first version where the project started feeling like a real game.
+
+The browser version made it possible to build and test gameplay quickly. That mattered a lot, because early game development benefits from fast iteration more than heavy production setup.
+
+The main focus was simple: playable interaction, movement, collisions, and immediate feedback.
 
 **Tech used in this phase**
 
@@ -114,16 +100,9 @@ This showcase repository exists to tell the development story in a clearer and m
 
 ### 4. Web MVP UI improvement
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="docs/readme-assets/04-ui-improved-mvp-on-web.png" alt="UI improved MVP on web" width="100%">
-    </td>
-    <td width="50%">
-      <img src="docs/readme-assets/05-example-new-ui.png" alt="Example new UI" width="100%">
-    </td>
-  </tr>
-</table>
+<img src="docs/readme-assets/04-ui-improved-mvp-on-web.png" alt="UI improved MVP on web" width="100%">
+
+<img src="docs/readme-assets/05-example-new-ui.png" alt="Example new UI" width="100%">
 
 After the core game started working, the next challenge was clarity.
 
@@ -133,16 +112,9 @@ This was an important shift because a game is not only about mechanics. If playe
 
 ### 5. First mobile menu versions
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="docs/readme-assets/06-first-mobile-menu.png" alt="First mobile menu" width="100%">
-    </td>
-    <td width="50%">
-      <img src="docs/readme-assets/07-first-mobile-menu-2.png" alt="First mobile menu 2" width="100%">
-    </td>
-  </tr>
-</table>
+<img src="docs/readme-assets/06-first-mobile-menu.png" alt="First mobile menu" width="100%">
+
+<img src="docs/readme-assets/07-first-mobile-menu-2.png" alt="First mobile menu 2" width="100%">
 
 Bringing the game to mobile was not just a screen resize. It required rethinking flow, touch interaction, spacing, and what players should see first.
 
@@ -160,51 +132,28 @@ This phase forced better product thinking. Desktop and web habits do not automat
 
 ### 6. Mobile graphics and visual improvement search
 
-<table>
-  <tr>
-    <td width="56%">
-      <img src="docs/readme-assets/10-mobile-version-graphics-improvement-search.png" alt="Mobile graphics improvement search" width="100%">
-    </td>
-    <td width="44%">
-      This part of development was about searching for a stronger visual direction.
-      <br><br>
-      Instead of only adding more features, the work here focused on making the game feel more coherent: better visual decisions, improved readability, and a more consistent presentation across screens.
-      <br><br>
-      This is where many projects either become more focused or become messy. Here, the goal was clearly to simplify and strengthen the overall identity.
-    </td>
-  </tr>
-</table>
+<img src="docs/readme-assets/10-mobile-version-graphics-improvement-search.png" alt="Mobile graphics improvement search" width="100%">
+
+This part of development was about searching for a stronger visual direction.
+
+Instead of only adding more features, the work here focused on making the game feel more coherent: better visual decisions, improved readability, and a more consistent presentation across screens.
+
+This is where many projects either become more focused or become messy. Here, the goal was clearly to simplify and strengthen the overall identity.
 
 ### 7. Current mobile MVP / prototype
 
-<table>
-  <tr>
-    <td width="58%" rowspan="2">
-      <img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Last mobile version on a real phone" width="100%">
-    </td>
-    <td width="21%">
-      <img src="docs/readme-assets/09-last-version-mobile-2.png" alt="Last mobile version 2" width="100%">
-    </td>
-    <td width="21%">
-      <img src="docs/readme-assets/11-last-version-mobile-1.png" alt="Last mobile version 1" width="100%">
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      This is the point where the project can now be shown publicly with confidence.
-      <br><br>
-      It is still ongoing development, but it has reached a meaningful MVP/prototype phase:
-      <br><br>
-      - the mobile version is playable
-      <br>
-      - the visual language is much more mature than in the first builds
-      <br>
-      - the structure is good enough to continue iterating seriously
-      <br>
-      - the project is now clear enough to invite feedback and possible collaboration
-    </td>
-  </tr>
-</table>
+<img src="docs/readme-assets/09-last-version-mobile-2.png" alt="Last mobile version 2" width="100%">
+
+<img src="docs/readme-assets/11-last-version-mobile-1.png" alt="Last mobile version 1" width="100%">
+
+This is the point where the project can now be shown publicly with confidence.
+
+It is still ongoing development, but it has reached a meaningful MVP/prototype phase:
+
+- the mobile version is playable
+- the visual language is much more mature than in the first builds
+- the structure is good enough to continue iterating seriously
+- the project is now clear enough to invite feedback and possible collaboration
 
 ---
 
