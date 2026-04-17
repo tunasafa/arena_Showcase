@@ -1,207 +1,344 @@
-# Arena Showcase
-
 <div align="center">
-  <h1>ARENA SHOWCASE</h1>
-  <p><strong>A visual development story from first sketch to mobile MVP</strong></p>
-  <p>
-    This repository is the public showcase page for the ARENA game project:
-    a timeline of experiments, mistakes, improvements, and the current prototype state.
-  </p>
-  <p>
-    <a href="https://github.com/tunasafa/arena">Main Game Repository</a>
-  </p>
-  <p>
-    <img alt="Showcase Repo" src="https://img.shields.io/badge/repo-showcase-E94560">
-    <img alt="Project Status" src="https://img.shields.io/badge/project-ongoing-F59E0B">
-    <img alt="Current Phase" src="https://img.shields.io/badge/current%20phase-mobile%20MVP-0A7F5A">
-  </p>
+
+# 🏟️ ARENA
+
+**From a napkin sketch to a real-time 3D mobile game — the full development story**
+
+<br>
+
+An arena-based multiplayer fighting game where players push each other into holes, collect power-ups, and try to be the last one standing. Built from scratch — first as a browser prototype, then rebuilt as a native mobile app.
+
+<br>
+
+<img alt="Status" src="https://img.shields.io/badge/status-active_development-F59E0B?style=for-the-badge">
+<img alt="Phase" src="https://img.shields.io/badge/phase-mobile_MVP-0A7F5A?style=for-the-badge">
+<img alt="Platform" src="https://img.shields.io/badge/platform-iOS_%26_Android-E94560?style=for-the-badge">
+
+<br><br>
+
+*This is the showcase repository — a visual timeline of how the game was made.*
+*The development repo is private for now.*
+
 </div>
 
-> This is not the full development repository. This is the presentation page for the project journey so far.
-
-## What This Showcase Is
-
-ARENA started as a rough game idea, then became a 3D browser prototype, and later evolved into a mobile version that is now strong enough to present publicly as an MVP/prototype.
-
-This page shows the visual path of the project: how it started, how it changed, what improved, and what was learned while building it.
-
-## Project Status Today
-
-The game is still in active development.
-
-It is not presented as a finished product. It is presented because it has now reached a meaningful prototype stage:
-
-- playable
-- visually much more coherent than the first versions
-- technically structured enough to continue building on
-- ready for feedback, testing, contribution ideas, and iteration
-
-## Current State First
-
-<img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Current mobile version shown on a real phone" width="100%">
-
-This is the current state of the project today.
-
-The game is still ongoing, but it has now reached a mobile MVP/prototype phase that is strong enough to present publicly.
-
-## Main Repository
-
-The actual game development repository is here but it is private for now:
-
-**[github.com/tunasafa/arena](https://github.com/tunasafa/arena)**
-
-This showcase repository exists to tell the development story in a clearer and more visual way.
-
-## Development Story
-
-### 1. The sketch stage
-
-<img src="docs/readme-assets/03-sketch.png" alt="Sketch" width="100%">
-
-Everything started from a simple sketch.
-
-The goal here was not polish. It was to test the core idea early and keep the scope small enough to build.
-
-### 2. First concept trial
-
-<img src="docs/readme-assets/02-first-concept-trial.png" alt="First concept trial" width="100%">
-
-This was the first serious attempt to prove the idea.
-
-It was rough, but useful. This stage answered the important question: does the idea still feel good once it is actually moving?
-
-### 3. First 3D web version
-
-<img src="docs/readme-assets/01-first-3d-web-version.png" alt="First 3D web version" width="100%">
-
-This was the first version where the project started feeling like a real game.
-
-The browser version made fast gameplay testing possible. The focus was simple: movement, collisions, readable interaction, and immediate feedback.
-
-**Tech used in this phase**
-
-- `HTML`
-- `CSS`
-- `JavaScript`
-- `Three.js` for 3D rendering
-- `Matter.js` for gameplay physics
-
-### 4. Web MVP UI improvement
-
-<img src="docs/readme-assets/04-ui-improved-mvp-on-web.png" alt="UI improved MVP on web" width="100%">
-
-<img src="docs/readme-assets/05-example-new-ui.png" alt="Example new UI" width="100%">
-
-After the core game started working, the next challenge was clarity.
-
-This stage improved the interface, visual hierarchy, and overall readability so the prototype could feel more intentional and presentable.
-
-### 5. First mobile menu versions
-
-<img src="docs/readme-assets/06-first-mobile-menu.png" alt="First mobile menu" width="100%">
-
-<img src="docs/readme-assets/07-first-mobile-menu-2.png" alt="First mobile menu 2" width="100%">
-
-Bringing the game to mobile was not just a screen resize. It required rethinking flow, touch interaction, spacing, and what players should see first.
-
-This phase forced better mobile thinking. Web habits did not translate directly to touch screens, so the UX had to be redesigned instead of just adapted.
-
-**Tech used in this phase**
-
-- `React Native`
-- `Expo`
-- `TypeScript`
-- `React Navigation`
-- `expo-gl`
-- `expo-three`
-- custom touch UI such as joystick and action buttons
-
-### 6. Mobile graphics and visual improvement search
-
-<img src="docs/readme-assets/10-mobile-version-graphics-improvement-search.png" alt="Mobile graphics improvement search" width="100%">
-
-This part of development was about searching for a stronger visual direction.
-
-Instead of only adding features, the focus here was coherence: better readability, cleaner visual decisions, and a stronger identity across screens.
-
-### 7. Current mobile MVP / prototype
-
-<img src="docs/readme-assets/09-last-version-mobile-2.png" alt="Last mobile version 2" width="100%">
-
-<img src="docs/readme-assets/11-last-version-mobile-1.png" alt="Last mobile version 1" width="100%">
-
-This is the point where the project can now be shown publicly with confidence.
-
-It is still ongoing development, but it has reached a meaningful MVP/prototype phase:
-
-- the mobile version is playable
-- the visual language is much more mature than in the first builds
-- the structure is good enough to continue iterating seriously
-- the project is now clear enough to invite feedback and possible collaboration
+<br>
 
 ---
 
-## Technical Direction, In Short
+<br>
 
-This project has been built with practical technology choices that support iteration and real-time gameplay without making the stack unnecessarily heavy.
+## 🎮 What Is Arena?
 
-| Area | Main technology |
-| --- | --- |
-| Early browser prototype | `HTML`, `CSS`, `JavaScript`, `Three.js`, `Matter.js` |
-| Mobile app layer | `React Native`, `Expo`, `TypeScript` |
-| 3D rendering on mobile | `three`, `expo-three`, `expo-gl` |
-| App navigation | `React Navigation` |
-| Multiplayer groundwork | `Socket.IO` and peer/networking-oriented architecture |
+**Arena** is a fast-paced physics-based game. You control a player on a circular arena full of holes. Your goal: push everyone else into those holes using dash attacks and power-ups, while avoiding falling in yourself.
 
-The technical goal has been simple: use tools that are flexible enough for experimentation, but solid enough to support real gameplay progression.
+The game has two modes:
 
-## Why It Should Perform Well
+- **Push Arena** — Free-for-all chaos. Push opponents into holes. Pick up perks like Speed Boost, Mega Push, Shield, Invincible, and Magnet. Last player standing wins.  
+- **Iso Arena** — A more strategic turn-based variant with puck mechanics and a different camera angle.
 
-The project is designed around a relatively focused arena format, which is a good fit for maintaining performance.
+You play against AI bots right now, but the multiplayer architecture (WebRTC peer-to-peer) is already built and working on the web version.
 
-- the gameplay area is compact, which helps keep rendering and simulation manageable
-- `Matter.js` is a strong match for controlled physics-based interaction
-- `Three.js` is used in a contained way rather than for a huge asset-heavy world
-- the mobile implementation already includes practical optimization patterns like cached textures, shared resources, disposal helpers, and simplified touch UI sizing
-- the web implementation also shows performance-aware decisions such as particle limits, shared materials, cleanup logic, and reduced work when the page is not visible
+<br>
 
-The performance strategy is based on controlled scope, sensible tooling, and iterative optimization where it matters.
+---
 
-## What Improved Over Time
+<br>
 
-- the idea became clearer
-- the game loop became more grounded
-- the interface became easier to read
-- the mobile adaptation became more intentional
-- the structure of the codebase became stronger as the project expanded
-- the prototype became easier to present and easier to continue developing
+## 📖 The Development Story
 
-## Skills Learned By Building It
+This section tells the journey chronologically — from the first rough idea to the current mobile version. Each step shows what changed, what was learned, and what mistakes led to the next improvement.
 
-This project taught important lessons through iteration and mistakes.
+<br>
 
-- sketching early is useful because it reduces wasted complexity
-- fast prototypes reveal weak ideas quickly
-- game feel matters as much as technical correctness
-- UI readability is part of gameplay quality
-- mobile design needs its own thinking, not just adaptation
-- not every mistake is failure; many mistakes are how the next stronger version becomes visible
+### `Stage 01` — The Sketch
 
-## Why The Project Is Being Shown Now
+<table>
+  <tr>
+    <td width="50%">
+      <img src="docs/readme-assets/03-sketch.png" alt="The first sketch of the arena game concept" width="100%">
+    </td>
+    <td width="50%">
+      <h4>Every game starts somewhere</h4>
+      <p>This was it. A rough sketch on paper — a circular arena, some holes around the edge, players in the middle.</p>
+      <p>There was no code yet, no engine, no tech decisions. Just an idea: <em>"what if you had to push other players into holes?"</em></p>
+      <p>Looking back, the sketch was surprisingly close to what the game became. The circular shape, the hole placement around the perimeter, the center hub — all of that survived into the final version. Sketching first saved a lot of aimless coding later.</p>
+    </td>
+  </tr>
+</table>
 
-The game is still ongoing, but it has reached a stage where public presentation makes sense.
+<br>
 
-That means this is a good time for:
+### `Stage 02` — First Concept Trial
 
-- contributions
-- testing
-- design ideas
-- UI/UX feedback
-- gameplay balancing feedback
-- technical suggestions
+<table>
+  <tr>
+    <td width="50%">
+      <img src="docs/readme-assets/02-first-concept-trial.png" alt="First digital concept trial" width="100%">
+    </td>
+    <td width="50%">
+      <h4>Does this actually work?</h4>
+      <p>The first real attempt to see if the idea had legs. Still extremely rough — no real physics, no polish, just shapes on a screen.</p>
+      <p>But this answered the most important question: <strong>does the core loop feel fun?</strong> Moving around an arena and trying to knock things into holes — does that have any pull?</p>
+      <p>It did. That was enough to keep going.</p>
+      <p><strong>Lesson learned:</strong> Some ideas feel great in your head but fall apart the moment you actually try them. Testing the concept early, even ugly, filters out the dead ends fast.</p>
+    </td>
+  </tr>
+</table>
 
-## Ongoing Development
+<br>
 
-ARENA is still evolving.
+### `Stage 03` — First 3D Web Version
 
-This showcase is a snapshot of the journey so far, not the final destination. The project has moved from sketch, to concept, to web prototype, to mobile MVP, and it will keep improving from here.
+<table>
+  <tr>
+    <td width="50%">
+      <img src="docs/readme-assets/01-first-3d-web-version.png" alt="First 3D browser version of the arena" width="100%">
+    </td>
+    <td width="50%">
+      <h4>It suddenly felt like a real game</h4>
+      <p>This was the turning point. Moving from flat concept to a 3D browser game made everything click. You could see the arena from above, watch players move, and feel the physics.</p>
+      <p>The browser was chosen deliberately — no app store, no build tools, no compile step. Just open a file and play. That speed of iteration mattered more than anything else at this stage.</p>
+      <p><strong>Mistake made here:</strong> The first version used neon-heavy visuals with glowing lines everywhere. It looked "cool" at first but quickly became hard to read during gameplay. Visual noise ≠ good design. This got fixed later.</p>
+    </td>
+  </tr>
+</table>
+
+**Tech that made this possible:**
+
+| What | Why |
+|------|-----|
+| Three.js | 3D rendering in the browser — no Unity, no downloads, just WebGL |
+| Matter.js | 2D physics engine for collisions, pushing, and hole detection |
+| Vanilla JS | No framework overhead, just raw game loop control |
+
+<br>
+
+### `Stage 04` — Web UI Gets Serious
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="docs/readme-assets/04-ui-improved-mvp-on-web.png" alt="Improved web UI" width="100%">
+    </td>
+    <td width="50%">
+      <img src="docs/readme-assets/05-example-new-ui.png" alt="Example of the new UI direction" width="100%">
+    </td>
+  </tr>
+</table>
+
+Once the gameplay worked, the next problem became obvious: **the game looked like a prototype**.
+
+The UI was confusing, the menus were afterthoughts, and nothing felt intentional. This stage was about making the game look like something you'd actually want to play — not just something a developer was testing.
+
+The lobby system, game mode selection, and visual hierarchy all got redesigned. The arena itself evolved too — from flat neon lines to a chunky **rustic industrial** style with iron plates, bolt studs, golden rim accents, and dark metal collars around every hole. Each hole now has a physical depth shaft instead of just a colored circle.
+
+> **Key realization:** A game isn't just mechanics. If people can't instantly read what's happening on screen, the feel breaks — even when the physics are perfect underneath.
+
+<br>
+
+### `Stage 05` — Going Mobile: First Menus
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="docs/readme-assets/06-first-mobile-menu.png" alt="First mobile menu design" width="100%">
+    </td>
+    <td width="50%">
+      <img src="docs/readme-assets/07-first-mobile-menu-2.png" alt="Second iteration of mobile menu" width="100%">
+    </td>
+  </tr>
+</table>
+
+This is where the real challenge started. Moving to mobile wasn't a "resize the browser window" situation. It meant rebuilding the entire rendering pipeline, input system, and navigation from the ground up.
+
+The game engine had to be rewritten in TypeScript. The 3D rendering had to go through `expo-gl` (OpenGL ES on the phone's GPU) instead of browser WebGL. Touch controls had to replace keyboard input — a virtual joystick for movement, dedicated buttons for push and dash.
+
+**The first mobile menus looked rough.** But they worked. And they proved the core game could run at playable frame rates on a real phone.
+
+**Tech stack for mobile:**
+
+| What | Why |
+|------|-----|
+| React Native + Expo | Cross-platform native app without writing Swift/Kotlin separately |
+| expo-gl + expo-three | Bridge between Three.js and the phone's native OpenGL context |
+| Matter.js | Same physics engine — reused from the web version |
+| TypeScript | Type safety across a growing codebase with complex game state |
+| React Navigation | Screen flow between menus, lobby, and game modes |
+
+<br>
+
+### `Stage 06` — The Graphics Search
+
+<table>
+  <tr>
+    <td width="55%">
+      <img src="docs/readme-assets/10-mobile-version-graphics-improvement-search.png" alt="Experimenting with mobile graphics improvements" width="100%">
+    </td>
+    <td width="45%">
+      <h4>Finding the right look</h4>
+      <p>This was the messy middle of development. The game worked, but it didn't look <em>right</em> yet on mobile.</p>
+      <p>A lot of time went into trial and error here — different arena materials, lighting setups, player model styles. The original cylinder player models got replaced with <strong>procedural robot ball models</strong> (sphere body, accent ring, glowing lens, side panels). Each player got unique ornament themes like Cyclops, Tri-Eye, and Armored.</p>
+      <p>The arena aesthetic shifted from neon to a grounded <strong>rustic industrial</strong> look — worn iron plates, bolted seams, raised metal collars around holes, golden divider lines between sectors.</p>
+      <p><strong>Biggest lesson here:</strong> Graphics iteration feels slow and unproductive compared to adding features. But it's what makes people actually <em>want</em> to play your game.</p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### `Stage 07` — Current Mobile MVP
+
+<table>
+  <tr>
+    <td width="33%">
+      <img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Current version running on a real phone" width="100%">
+    </td>
+    <td width="33%">
+      <img src="docs/readme-assets/09-last-version-mobile-2.png" alt="Current mobile version - gameplay" width="100%">
+    </td>
+    <td width="33%">
+      <img src="docs/readme-assets/11-last-version-mobile-1.png" alt="Current mobile version - arena view" width="100%">
+    </td>
+  </tr>
+</table>
+
+**This is where the game is today.**
+
+It runs on real phones. The arena looks intentional. The physics feel responsive. The touch controls work. The AI opponents put up a real fight. And the visual identity — the dark industrial arena with golden accents, glowing perks floating above the surface, robot ball players casting shadows on worn iron — finally feels coherent.
+
+**What's in the current build:**
+
+- 🏟️ Two game modes — Push Arena (free-for-all) and Iso Arena (turn-based strategic)
+- 🤖 AI opponents with configurable difficulty and behavior patterns
+- ⚡ Perk system — Speed Boost, Mega Push, Shield, Invincible, Magnet
+- 🎮 Touch controls — virtual joystick + action buttons with cooldown feedback
+- 🎨 Procedural 3D arena with rustic industrial aesthetic
+- 🔊 Player models with unique themed ornaments
+- 🌐 Multiplayer architecture (WebRTC/PeerJS) built and working on web
+
+<br>
+
+---
+
+<br>
+
+## ⚙️ Under the Hood
+
+The game isn't built on a commercial engine. Everything from the physics loop to the arena geometry is hand-wired. Here's why the tech choices matter:
+
+<table>
+  <tr>
+    <th>Layer</th>
+    <th>Tech</th>
+    <th>Why This Choice</th>
+  </tr>
+  <tr>
+    <td><strong>3D Rendering</strong></td>
+    <td>Three.js → expo-three</td>
+    <td>Lightweight enough for mobile GPU. No asset pipeline needed — all geometry is procedural.</td>
+  </tr>
+  <tr>
+    <td><strong>Physics</strong></td>
+    <td>Matter.js</td>
+    <td>2D physics projected into 3D space. Simpler than a full 3D physics engine, and the arena's top-down gameplay doesn't need the Z-axis for collisions.</td>
+  </tr>
+  <tr>
+    <td><strong>Mobile App</strong></td>
+    <td>React Native + Expo</td>
+    <td>Single codebase for iOS and Android. Expo handles native modules (GL context, screen orientation, fonts) without manual linking.</td>
+  </tr>
+  <tr>
+    <td><strong>Multiplayer</strong></td>
+    <td>WebRTC via PeerJS</td>
+    <td>Peer-to-peer — no game server needed. Players connect directly for lowest possible latency.</td>
+  </tr>
+  <tr>
+    <td><strong>Language</strong></td>
+    <td>TypeScript</td>
+    <td>Type safety across 30+ game files with shared state, physics bodies, and Three.js objects.</td>
+  </tr>
+</table>
+
+### Why It Performs Well on Mobile
+
+Mobile performance was a real battle. Early versions stuttered badly. Here's what was done to fix it:
+
+- **Geometry merging** — Complex player models use shared geometry instances instead of creating new ones per frame
+- **Object pooling** — Particles, perks, and effects reuse pre-allocated objects instead of creating garbage for the GC to clean up
+- **Capped particle counts** — Hard limit of 150 particles on mobile (down from 250 on web)
+- **Shared materials** — Bolt heads, arena segments, and repeated geometry all reference the same material instances
+- **Disposal helpers** — Every Three.js object has explicit cleanup to prevent GPU memory leaks
+- **React bridge optimization** — Game state updates are batched to avoid flooding the React Native bridge with re-renders
+
+None of this is overengineering. The arena is a controlled, compact space — so the optimization strategy is about being disciplined with the small things rather than building a massive engine.
+
+<br>
+
+---
+
+<br>
+
+## 🧠 What Was Learned Along the Way
+
+Building this game taught real lessons — not from tutorials, but from hitting walls and figuring a way through.
+
+| Lesson | How It Was Learned |
+|--------|-------------------|
+| **Sketch before you code** | The paper sketch saved weeks of building the wrong thing |
+| **Ugly prototypes are more valuable than pretty plans** | The first concept trial looked terrible but proved the idea had potential |
+| **Neon ≠ good game visuals** | The early glowing line aesthetic looked flashy but made gameplay unreadable |
+| **Mobile is a different platform, not a smaller screen** | Touch controls, memory limits, and GPU constraints required a full rethink |
+| **Physics tuning is game design** | Push force, dash cooldown, max speed — changing these by small amounts completely changed how the game felt |
+| **Mistakes are just earlier versions** | The neon arena → rustic arena transition only happened because the first approach failed |
+| **Graphics polish isn't optional** | Players judge a game in the first 2 seconds. The visual overhaul is what made the game presentable |
+
+<br>
+
+---
+
+<br>
+
+## 🚧 Project Status
+
+**Arena is still in active development.** It's not finished — but it's reached a point where showing it publicly makes sense.
+
+This is the MVP / prototype phase. The game is:
+
+✅ Playable on real devices  
+✅ Visually coherent (not placeholder art)  
+✅ Architecturally structured enough to keep building on  
+✅ Open for feedback, ideas, and contributions  
+
+### What's Next
+
+- 🔌 Bringing the WebRTC multiplayer to mobile (currently web-only)
+- 🎯 More game modes and arena variations
+- 🏆 Scoring, progression, and match history
+- 📱 App store preparation and beta testing
+- 🎨 Continued visual polish and new player model themes
+
+<br>
+
+---
+
+<br>
+
+## 🤝 Open for Contributions
+
+If any of this interests you — whether it's gameplay ideas, UI/UX feedback, physics tuning, performance suggestions, or just testing and reporting bugs — this project is open for it.
+
+The game was built solo so far, learning by doing. Outside perspectives would be valuable at this stage.
+
+<br>
+
+---
+
+<div align="center">
+  <br>
+  <strong>ARENA</strong>
+  <br>
+  <em>From sketch → concept → browser prototype → mobile MVP</em>
+  <br>
+  <em>Still going.</em>
+  <br><br>
+</div>
