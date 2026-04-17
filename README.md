@@ -23,13 +23,7 @@
 
 ARENA started as a rough game idea, then became a 3D browser prototype, and later evolved into a mobile version that is now strong enough to present publicly as an MVP/prototype.
 
-This page is meant to show:
-
-- how the game idea started
-- how the design changed over time
-- what was improved between versions
-- what technologies were used
-- what was learned by building, testing, and making mistakes
+This page shows the visual path of the project: how it started, how it changed, what improved, and what was learned while building it.
 
 ## Project Status Today
 
@@ -48,7 +42,7 @@ It is not presented as a finished product. It is presented because it has now re
 
 This is the current state of the project today.
 
-The game is still ongoing, but it has now reached a mobile MVP/prototype phase that is strong enough to present publicly. Showing the latest real-device version first makes the rest of the page easier to read as a development journey toward this point.
+The game is still ongoing, but it has now reached a mobile MVP/prototype phase that is strong enough to present publicly.
 
 ## Main Repository
 
@@ -66,9 +60,7 @@ This showcase repository exists to tell the development story in a clearer and m
 
 Everything started from a simple sketch.
 
-At this point, the goal was not polish. The goal was to understand the core game idea: an arena-based experience with readable movement, competitive energy, and enough structure to become a real playable loop later.
-
-Starting with sketching helped keep the scope small and testable.
+The goal here was not polish. It was to test the core idea early and keep the scope small enough to build.
 
 ### 2. First concept trial
 
@@ -76,9 +68,7 @@ Starting with sketching helped keep the scope small and testable.
 
 This was the first serious attempt to prove the idea.
 
-It was still rough, but that was useful. The purpose here was to check whether the game concept actually had potential in motion, not just in imagination.
-
-One of the first lessons came here: some ideas feel exciting in theory, but only real testing shows what is worth continuing.
+It was rough, but useful. This stage answered the important question: does the idea still feel good once it is actually moving?
 
 ### 3. First 3D web version
 
@@ -86,9 +76,7 @@ One of the first lessons came here: some ideas feel exciting in theory, but only
 
 This was the first version where the project started feeling like a real game.
 
-The browser version made it possible to build and test gameplay quickly. That mattered a lot, because early game development benefits from fast iteration more than heavy production setup.
-
-The main focus was simple: playable interaction, movement, collisions, and immediate feedback.
+The browser version made fast gameplay testing possible. The focus was simple: movement, collisions, readable interaction, and immediate feedback.
 
 **Tech used in this phase**
 
@@ -106,9 +94,7 @@ The main focus was simple: playable interaction, movement, collisions, and immed
 
 After the core game started working, the next challenge was clarity.
 
-This stage was about improving the interface, making the game look more intentional, and moving it away from "early prototype energy" toward something that could be shown with more confidence.
-
-This was an important shift because a game is not only about mechanics. If players cannot read the game clearly, the experience weakens even when the systems are working.
+This stage improved the interface, visual hierarchy, and overall readability so the prototype could feel more intentional and presentable.
 
 ### 5. First mobile menu versions
 
@@ -118,7 +104,7 @@ This was an important shift because a game is not only about mechanics. If playe
 
 Bringing the game to mobile was not just a screen resize. It required rethinking flow, touch interaction, spacing, and what players should see first.
 
-This phase forced better product thinking. Desktop and web habits do not automatically translate to phones, so the mobile version became a separate design challenge.
+This phase forced better mobile thinking. Web habits did not translate directly to touch screens, so the UX had to be redesigned instead of just adapted.
 
 **Tech used in this phase**
 
@@ -136,9 +122,7 @@ This phase forced better product thinking. Desktop and web habits do not automat
 
 This part of development was about searching for a stronger visual direction.
 
-Instead of only adding more features, the work here focused on making the game feel more coherent: better visual decisions, improved readability, and a more consistent presentation across screens.
-
-This is where many projects either become more focused or become messy. Here, the goal was clearly to simplify and strengthen the overall identity.
+Instead of only adding features, the focus here was coherence: better readability, cleaner visual decisions, and a stronger identity across screens.
 
 ### 7. Current mobile MVP / prototype
 
@@ -181,11 +165,9 @@ The project is designed around a relatively focused arena format, which is a goo
 - the mobile implementation already includes practical optimization patterns like cached textures, shared resources, disposal helpers, and simplified touch UI sizing
 - the web implementation also shows performance-aware decisions such as particle limits, shared materials, cleanup logic, and reduced work when the page is not visible
 
-So the performance strategy is not based on overengineering. It is based on controlled scope, sensible tooling, and iterative optimization where it matters.
+The performance strategy is based on controlled scope, sensible tooling, and iterative optimization where it matters.
 
 ## What Improved Over Time
-
-The biggest change is not just the visuals. It is the maturity of the project decisions.
 
 - the idea became clearer
 - the game loop became more grounded
