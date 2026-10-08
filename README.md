@@ -6,13 +6,14 @@
 
 <br>
 
-An arena-based multiplayer fighting game where players push each other into holes, collect power-ups, and try to be the last one standing. Built from scratch — first as a browser prototype, then rebuilt as a native mobile app.
+An arena-based multiplayer fighting game where players push each other into holes, collect power-ups, and try to be the last one standing. Built from scratch — first as a browser prototype, then rebuilt as a native mobile app. **Now in Google Play Store Closed Testing with live online multiplayer!**
 
 <br>
 
-<img alt="Status" src="https://img.shields.io/badge/status-active_development-F59E0B?style=for-the-badge">
-<img alt="Phase" src="https://img.shields.io/badge/phase-mobile_MVP-0A7F5A?style=for-the-badge">
-<img alt="Platform" src="https://img.shields.io/badge/platform-iOS_%26_Android-E94560?style=for-the-badge">
+<img alt="Status" src="https://img.shields.io/badge/status-closed_testing-0A7F5A?style=for-the-badge">
+<img alt="Phase" src="https://img.shields.io/badge/phase-google_play_closed_testing-3498db?style=for-the-badge">
+<img alt="Multiplayer" src="https://img.shields.io/badge/multiplayer-online_live-7952b3?style=for-the-badge">
+<img alt="Platform" src="https://img.shields.io/badge/platform-Android_%26_iOS-E94560?style=for-the-badge">
 
 <br><br>
 
@@ -44,7 +45,7 @@ The game has two modes:
 - **Push Arena** — Free-for-all chaos. Push opponents into holes. Pick up perks like Speed Boost, Mega Push, Shield, Invincible, and Magnet. Last player standing wins.
 - **Iso Arena** — A more strategic turn-based variant with puck mechanics and a different camera angle.
 
-You play against AI bots right now, but the multiplayer architecture (WebRTC peer-to-peer) is already built and working on the web version.
+Both modes support solo play against AI bots and **live native online multiplayer**. Online matches run on a fixed-tick, server-authoritative simulation over WebSockets with 60 Hz input sampling and MessagePack v2 delta snapshots.
 
 <br>
 
@@ -200,7 +201,8 @@ It runs on real phones. The arena looks intentional. The physics feel responsive
 - Touch controls — virtual joystick + action buttons with cooldown feedback
 - Procedural 3D arena with rustic industrial aesthetic
 - Player models with unique themed ornaments
-- Multiplayer architecture (WebRTC/PeerJS) built and working on web
+- **Live online multiplayer** — Native Socket.IO + MessagePack v2 binary WebSocket transport with server-owned 60 Hz simulation, delta snapshots, 60 Hz input sampling, room codes, and 90-second reconnection grace period
+- **Google Play Store Closed Testing** — Playable on Android devices with production release signing and integrated Firebase Crashlytics
 
 <br>
 
@@ -217,7 +219,7 @@ The game isn't built on a commercial engine. Everything from the physics loop to
 | **3D Rendering** | Three.js / expo-three | Lightweight enough for mobile GPU. No asset pipeline needed — all geometry is procedural. |
 | **Physics** | Matter.js | 2D physics projected into 3D space. Simpler than a full 3D physics engine, and the arena's top-down gameplay doesn't need the Z-axis for collisions. |
 | **Mobile App** | React Native + Expo | Single codebase for iOS and Android. Expo handles native modules (GL context, screen orientation, fonts) without manual linking. |
-| **Multiplayer** | WebRTC via PeerJS | Peer-to-peer — no game server needed. Players connect directly for lowest possible latency. |
+| **Multiplayer** | Socket.IO + MessagePack v2 | Server-authoritative Node.js simulation validating player inputs, broadcasting delta snapshots, and preventing desyncs or cheating. |
 | **Language** | TypeScript | Type safety across 30+ game files with shared state, physics bodies, and Three.js objects. |
 
 ### Why It Performs Well on Mobile
@@ -261,22 +263,26 @@ Building this game taught real lessons — not from tutorials, but from hitting 
 
 ## `Project Status`
 
-**Arena is still in active development.** It's not finished — but it's reached a point where showing it publicly makes sense.
+**Arena is currently in closed testing on the Google Play Store!** The native mobile app is now playable online with real-time multiplayer powered by our authoritative cloud infrastructure.
 
-This is the MVP / prototype phase. The game is:
+The current build is:
 
-- Playable on real devices
-- Visually coherent (not placeholder art)
-- Architecturally structured enough to keep building on
-- Open for feedback, ideas, and contributions
+- **Live in Google Play Closed Testing** — Playable on real Android devices with signed `.aab` builds and active testers
+- **Online multiplayer live** — Server-authoritative Node.js simulation hosted on GCP with Caddy auto-SSL, MessagePack v2 binary protocol, 60 Hz input sampling, and instant reconnection
+- **Visually polished & performant** — 60 FPS target via Three.js / Expo GL with static geometry batching, procedural marble textures, and adaptive resolution scaling
+- **Production telemetry** — Integrated Firebase Crashlytics with native Android NDK crash monitoring
+- **Open for feedback** — Active testing and tuning underway before open track and App Store releases
 
 ### What's Next
 
-- Bringing the WebRTC multiplayer to mobile (currently web-only)
-- More game modes and arena variations
+- ~~Bringing the WebRTC multiplayer to mobile (currently web-only)~~
+  - **Done:** Shipped native real-time online multiplayer using a fixed-tick server-authoritative architecture (Node.js on GCP with Caddy auto-SSL, Socket.IO + MessagePack v2 binary serialization, 60 Hz input sampling, 20 Hz delta snapshots, and 90-second reconnect handling).
+- ~~App store preparation and beta testing~~
+  - **Done:** Reached the **Google Play Store Closed Testing** phase! Built production-signed AAB packages via EAS, set up store assets and privacy policy, and launched the closed testing track on Google Play Console.
+- ~~Continued visual polish and new player model themes~~
+  - **Done (Visual Polish):** Completed mobile rendering optimizations including static geometry batching, procedural marble ball shaders, instanced particle pooling, compressed sound assets, and adaptive quality recovery for high-refresh screens. (New cosmetic player model themes remain on the roadmap).
 - Scoring, progression, and match history
-- App store preparation and beta testing
-- Continued visual polish and new player model themes
+- More game modes and arena variations
 
 <br>
 
@@ -299,7 +305,7 @@ The game was built solo so far, learning by doing. Outside perspectives would be
 
   **`ARENA`**
 
-  *From sketch — concept — browser prototype — mobile MVP*
+  *From sketch — concept — browser prototype — mobile closed testing*
 
   *Still going.*
 
