@@ -22,11 +22,11 @@ An arena-based multiplayer fighting game where players push each other into hole
 
 <br>
 
-<img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Arena running on a real phone — current state" width="70%">
+<img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Arena mobile MVP running on a real phone" width="70%">
 
 <br>
 
-*The current state of the game, running on a real device.*
+*The mobile MVP running on a real device. [See the latest maps below.](#october-12-update)*
 
 </div>
 
@@ -181,19 +181,19 @@ The arena aesthetic shifted from neon to a grounded **rustic industrial** look �
 
 ---
 
-### `Stage 07` — Current Mobile MVP
+### `Stage 07` — Mobile MVP & Closed Testing
 
-<img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Current version running on a real phone" width="100%">
+<img src="docs/readme-assets/08-last-mobile-version-real-phone.png" alt="Mobile MVP running on a real phone" width="100%">
 
-<img src="docs/readme-assets/09-last-version-mobile-2.png" alt="Current mobile version - gameplay" width="100%">
+<img src="docs/readme-assets/09-last-version-mobile-2.png" alt="Mobile MVP gameplay" width="100%">
 
-<img src="docs/readme-assets/11-last-version-mobile-1.png" alt="Current mobile version - arena view" width="100%">
+<img src="docs/readme-assets/11-last-version-mobile-1.png" alt="Mobile MVP arena view" width="100%">
 
-**This is where the game is today.**
+**The first mobile closed-testing milestone.**
 
 It runs on real phones. The arena looks intentional. The physics feel responsive. The touch controls work. The AI opponents put up a real fight. And the visual identity — the dark industrial arena with golden accents, glowing perks floating above the surface, robot ball players casting shadows on worn iron — finally feels coherent.
 
-**What's in the current build:**
+**What this milestone included:**
 
 - Two game modes — Push Arena (free-for-all) and Iso Arena (turn-based strategic)
 - AI opponents with configurable difficulty and behavior patterns
@@ -203,6 +203,36 @@ It runs on real phones. The arena looks intentional. The physics feel responsive
 - Player models with unique themed ornaments
 - **Live online multiplayer** — Native Socket.IO + MessagePack v2 binary WebSocket transport with server-owned 60 Hz simulation, delta snapshots, 60 Hz input sampling, room codes, and 90-second reconnection grace period
 - **Google Play Store Closed Testing** — Playable on Android devices with production release signing and integrated Firebase Crashlytics
+
+<br>
+
+---
+
+<a id="october-12-update"></a>
+
+### `Stage 08` — New Worlds · October 12, 2026
+
+Today's mobile update adds **three low-poly maps to both Push Arena and Iso Arena**, keeping the original Ironworks arena available:
+
+- **Floating Farm** — Six animal players on a thinner, textured rock island with decorative cracks, wooden fences, and deep holes.
+- **Dodgem Nights** — Six detailed bumper cars, grounded traffic barriers, and a simple dark background.
+- **Tidal Harbor** — Six ships inside a circular stone harbor, with swirling water holes, shoreline rocks, cargo, a lighthouse, and a light coastal background.
+
+Animals, cars, and ships are larger and more detailed; the original ball players keep their visual size. Player discs are gone: Iso shows your ring only on your turn, while Push shows only your own player indicator. Gameplay now blocks swipe-back and includes pause controls to resume, restart solo matches, or leave. An Expo iPhone rendering crash was also fixed.
+
+*Development renders of the latest mobile scenes, with the gameplay HUD hidden.*
+
+**Map 02 — Floating Farm**
+
+<img src="docs/readme-assets/12-floating-farm.png" alt="Floating Farm: six animals on a textured circular rock island with wooden fences and deep holes" width="100%">
+
+**Map 03 — Dodgem Nights**
+
+<img src="docs/readme-assets/13-dodgem-nights.png" alt="Dodgem Nights: six colorful bumper cars on a circular arena surrounded by traffic barriers" width="100%">
+
+**Map 04 — Tidal Harbor**
+
+<img src="docs/readme-assets/14-tidal-harbor.png" alt="Tidal Harbor: six ships on rippling water with whirlpool holes, stone harbor walls, a lighthouse, and a crane" width="100%">
 
 <br>
 
@@ -280,7 +310,7 @@ The current build is:
 - ~~App store preparation and beta testing~~
   - **Done:** Reached the **Google Play Store Closed Testing** phase! Built production-signed AAB packages via EAS, set up store assets and privacy policy, and launched the closed testing track on Google Play Console.
 - ~~Continued visual polish and new player model themes~~
-  - **Done (Visual Polish):** Completed mobile rendering optimizations including static geometry batching, procedural marble ball shaders, instanced particle pooling, compressed sound assets, and adaptive quality recovery for high-refresh screens. (New cosmetic player model themes remain on the roadmap).
+  - **Done:** Completed mobile rendering optimizations including static geometry batching, procedural marble ball shaders, instanced particle pooling, compressed sound assets, and adaptive quality recovery for high-refresh screens. The latest mobile development build also adds animal, bumper-car, and ship models with three matching arenas.
 - Scoring, progression, and match history
 - More game modes and arena variations
 
