@@ -26,7 +26,7 @@ An arena-based multiplayer fighting game where players push each other into hole
 
 <br>
 
-*The mobile MVP running on a real device. [See the latest maps below.](#october-12-update)*
+*The mobile MVP running on a real device. [See the latest update below.](#october-13-update)*
 
 </div>
 
@@ -240,6 +240,31 @@ Animals, cars, and ships are larger and more detailed; the original ball players
 
 <br>
 
+<a id="october-13-update"></a>
+
+### `Stage 09` — The Playable Overhaul · October 13, 2026
+
+Playtesting showed matches were either over in seconds or dragged on forever. This update rebuilds the power-ups, the bots and the match pacing, then refreshes the menus and two arenas. **Android 1.0.2 (build 10)** carries it to closed testing.
+
+<img src="docs/readme-assets/15-stage-09-overview.png" alt="Stage 09 overview: new Push and Pull mode cards, all five arena cards, and headline numbers" width="100%">
+
+| | What changed |
+|---|---|
+| ⚡ **Power-ups** | **AUTO** items apply on pickup; **USE** items stack (up to 3) and fire oldest-first from one button. 18 in total, 5 brand new. |
+| 🤖 **Bots** | One steady skill level all match. They hunt rivals near pits and follow the same rules as players. |
+| ⏱️ **Pacing** | Sudden death: pits start pulling after 40 s (Push) or from round 5 (Pull). No more stalemates. |
+| 🌐 **Online** | The same rulebook runs on the server (protocol v3), so online and solo play identically. |
+| 🎨 **Look** | Restyled in-game controls, tighter camera framing, light themed skies on every map, a cleaner **Ironworks** and a robot-workshop **Rivet Foundry**. |
+| 🔋 **Efficiency** | ~23 estimated draws per 6-player scene (143 in 1.0.1); a rematch texture leak fixed before release. |
+
+<img src="docs/readme-assets/16-stage-09-power-ups.png" alt="Power-up rework: Push Arena's 8 and Pull Arena's 10 power-ups grouped into AUTO and USE" width="100%">
+
+<br>
+
+---
+
+<br>
+
 ## `Under the Hood`
 
 The game isn't built on a commercial engine. Everything from the physics loop to the arena geometry is hand-wired. Here's why the tech choices matter:
@@ -249,7 +274,7 @@ The game isn't built on a commercial engine. Everything from the physics loop to
 | **3D Rendering** | Three.js / expo-three | Lightweight enough for mobile GPU. No asset pipeline needed — all geometry is procedural. |
 | **Physics** | Matter.js | 2D physics projected into 3D space. Simpler than a full 3D physics engine, and the arena's top-down gameplay doesn't need the Z-axis for collisions. |
 | **Mobile App** | React Native + Expo | Single codebase for iOS and Android. Expo handles native modules (GL context, screen orientation, fonts) without manual linking. |
-| **Multiplayer** | Socket.IO + MessagePack v2 | Server-authoritative Node.js simulation validating player inputs, broadcasting delta snapshots, and preventing desyncs or cheating. |
+| **Multiplayer** | Socket.IO + MessagePack (protocol v3) | Server-authoritative Node.js simulation validating player inputs, broadcasting delta snapshots, and preventing desyncs or cheating. |
 | **Language** | TypeScript | Type safety across 30+ game files with shared state, physics bodies, and Three.js objects. |
 
 ### Why It Performs Well on Mobile
@@ -298,7 +323,7 @@ Building this game taught real lessons — not from tutorials, but from hitting 
 The current build is:
 
 - **Live in Google Play Closed Testing** — Playable on real Android devices with signed `.aab` builds and active testers
-- **Online multiplayer live** — Server-authoritative Node.js simulation hosted on GCP with Caddy auto-SSL, MessagePack v2 binary protocol, 60 Hz input sampling, and instant reconnection
+- **Online multiplayer live** — Server-authoritative Node.js simulation hosted on GCP with Caddy auto-SSL, MessagePack binary protocol v3, 60 Hz input sampling, and instant reconnection
 - **Visually polished & performant** — 60 FPS target via Three.js / Expo GL with static geometry batching, procedural marble textures, and adaptive resolution scaling
 - **Production telemetry** — Integrated Firebase Crashlytics with native Android NDK crash monitoring
 - **Open for feedback** — Active testing and tuning underway before open track and App Store releases
@@ -311,6 +336,8 @@ The current build is:
   - **Done:** Reached the **Google Play Store Closed Testing** phase! Built production-signed AAB packages via EAS, set up store assets and privacy policy, and launched the closed testing track on Google Play Console.
 - ~~Continued visual polish and new player model themes~~
   - **Done:** Completed mobile rendering optimizations including static geometry batching, procedural marble ball shaders, instanced particle pooling, compressed sound assets, and adaptive quality recovery for high-refresh screens. The latest mobile development build also adds animal, bumper-car, and ship models with three matching arenas.
+- ~~Deeper, fairer gameplay~~
+  - **Done:** Reworked power-ups into AUTO and USE items with a 3-slot stash, steady-difficulty bots, and sudden death in both modes — shared by solo and the multiplayer server (see [Stage 09](#october-13-update)).
 - Scoring, progression, and match history
 - More game modes and arena variations
 
